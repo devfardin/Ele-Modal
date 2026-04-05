@@ -1,0 +1,103 @@
+li.elementor-icon-list-item.ele-modal__custom {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    margin: 5px 0 !important;
+    padding: 0 !important;
+    transition: opacity 0.2s ease;
+}
+
+li.elementor-icon-list-item.ele-modal__custom:hover {
+    opacity: 0.8;
+}
+
+li.elementor-icon-list-item.ele-modal__custom span {
+    color: var(--e-global-color-secondary) !important;
+}
+
+/* Overlay fade in */
+@keyframes overlayIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Modal slide up + fade in */
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Overlay fade out */
+@keyframes overlayOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Modal slide down + fade out */
+@keyframes modalOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+}
+
+.ele-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: overlayIn 0.25s ease forwards;
+    backdrop-filter: blur(3px);
+}
+
+.ele-modal-overlay.closing {
+    animation: overlayOut 0.25s ease forwards;
+}
+
+.ele-modal-overlay.closing .ele-modal-box {
+    animation: modalOut 0.25s ease forwards;
+}
+
+.ele-modal-box {
+    background: #fff;
+    padding: 25px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: modalIn 0.3s ease forwards;
+}
+
+.ele-modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    color: #575757;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 4px 8px;
+}
+
+.ele-modal-close:hover {
+    color: #fff;
+    background: var(--e-global-color-secondary);
+}

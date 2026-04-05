@@ -1,0 +1,83 @@
+.stater_plan__container p {
+    margin: 0;
+    padding: 0;
+}
+
+.stater_plan__container .stater_plan__top {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.stater_plan__container .stater_plan__top h2 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    color: var(--e-global-color-primary);
+    padding: 0;
+    margin: 0;
+}
+
+.stater_plan__container .stater_plan__top p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    color: #737373;
+    margin: 0;
+}
+
+.stater_plan__container .stater_plan__body {
+    margin-top: 15px;
+
+}
+
+.stater_plan__container .stater_plan__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level {
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(1) {
+    border: 1px solid #a7f3d0;
+    background-color: #ecfdf5;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(2) {
+    background: #fff4e5;
+    border: 1px solid #f0c36d;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    background-color: #d1fae5;
+    color: #047857;
+}
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title .level-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title .level-2 {
+    background: #fff4e5;
+    border: 1px solid #f0c36d;
+}
