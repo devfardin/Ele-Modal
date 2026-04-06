@@ -25,7 +25,12 @@ class Base
 
         // All script here
         wp_enqueue_script('modal-js', ELE_MODAL_DIR_URL . 'assets/js/modal.js', array('jquery'), ELE_MODAL_VERSION, true);
+        
+        // Stater Plan scritp
         wp_enqueue_script('modal-stater-plan', ELE_MODAL_DIR_URL . 'assets/js/starter_plan.js', array('jquery'), ELE_MODAL_VERSION, true);
+
+        // Most Popular paln script
+        wp_enqueue_script('most-popular', ELE_MODAL_DIR_URL . 'assets/js/most-popular.js', array('jquery'), ELE_MODAL_VERSION, true);
         
 
         // All Data here

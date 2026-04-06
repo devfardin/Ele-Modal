@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const element = document.querySelector(".starter .elementor-element.elementor-icon-list--layout-traditional.elementor-list-item-link-full_width.elementor-widget.elementor-widget-icon-list .elementor-icon-list-items .elementor-icon-list-item:nth-child(7)");
+    const element = document.querySelector(".most_popular .elementor-element.elementor-icon-list--layout-traditional.elementor-list-item-link-full_width.elementor-widget.elementor-widget-icon-list .elementor-icon-list-items .elementor-icon-list-item:nth-child(7)");
 
     const li = document.createElement('li');
     li.classList.add('elementor-icon-list-item', 'ele-modal__custom');

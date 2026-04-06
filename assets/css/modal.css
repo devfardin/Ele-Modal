@@ -57,11 +57,13 @@ li.elementor-icon-list-item.ele-modal__custom span {
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     z-index: 9999;
     animation: overlayIn 0.25s ease forwards;
     backdrop-filter: blur(3px);
+    overflow-y: auto;
+    padding: 20px 0;
 }
 
 .ele-modal-overlay.closing {
@@ -78,9 +80,12 @@ li.elementor-icon-list-item.ele-modal__custom span {
     max-width: 500px;
     width: 90%;
     position: relative;
-    border-radius: 12px;
+    border-radius: 12px 0 0 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     animation: modalIn 0.3s ease forwards;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    margin: auto;
 }
 
 .ele-modal-close {
@@ -100,4 +105,22 @@ li.elementor-icon-list-item.ele-modal__custom span {
 .ele-modal-close:hover {
     color: #fff;
     background: var(--e-global-color-secondary);
+}
+
+.ele-modal-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ele-modal-box::-webkit-scrollbar-track {
+    background: rgb(230, 230, 240);
+    border-radius: 0 12px 12px 0;
+}
+
+.ele-modal-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(99, 102, 241), rgb(168, 85, 247));
+    border-radius: 12px;
+}
+
+.ele-modal-box::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgb(79, 82, 221), rgb(148, 65, 227));
 }

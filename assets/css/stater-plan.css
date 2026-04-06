@@ -50,15 +50,15 @@
 
 .stater_plan__container .stater_plan__body .stater_plan__stain-level {
     border-radius: 0.5rem;
-    padding: 1.25rem;
+    padding: 1rem;
 }
 
-.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(1) {
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(odd) {
     border: 1px solid #a7f3d0;
     background-color: #ecfdf5;
 }
 
-.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(2) {
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(even) {
      background-color: rgb(255 251 235);
     border: 1px solid rgb(253 230 138);;
 }
@@ -76,13 +76,13 @@
     padding: 0.10rem 0.600rem;
     border-radius: 9999px;
 }
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title .level-1 {
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(odd) .stater_plan__body_title .level{
     --tw-bg-opacity: 1;
     background-color: rgb(209 250 229 / var(--tw-bg-opacity, 1));
     color: #047857;
 }
 
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title .level-2 {
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(even) .stater_plan__body_title .level{
     --tw-bg-opacity: 1;
     background-color: rgb(254 243 199 / var(--tw-bg-opacity, 1));
     border: 1px solid #fde68a;
@@ -152,3 +152,6 @@
    
 }
 }
+/* most_popular */
+
+/* best_value */
