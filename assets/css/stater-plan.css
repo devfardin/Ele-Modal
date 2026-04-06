@@ -10,7 +10,7 @@
 }
 
 .stater_plan__container .stater_plan__top h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     font-family: "Playfair Display";
     color: var(--e-global-color-primary);
@@ -18,12 +18,23 @@
     margin: 0;
 }
 
+@media only screen and (min-width: 768px){
+    .stater_plan__container .stater_plan__top h2 {
+    font-size: 25px;
+}
+}
+
 .stater_plan__container .stater_plan__top p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     font-family: 'Montserrat';
     color: #737373;
     margin: 0;
+}
+@media only screen and (min-width:768px){
+    .stater_plan__container .stater_plan__top p {
+    font-size: 16px;
+}
 }
 
 .stater_plan__container .stater_plan__body {
@@ -97,27 +108,47 @@
 }
 .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.890rem;
+    font-size: 0.820rem;
     color: #404040;
     display: flex;
     align-items: center;
     gap: 8px;
 }
+@media only screen and (min-width:768px){
+    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li{
+    font-size: 0.890rem;
+}
+}
 .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.90rem;
+    font-size: 0.830rem;
     color: #6B7280;
     font-style: italic;
     margin-top: 10px;
     padding: 0;
 }
+@media only screen and (min-width:768px){
+    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p{
+    font-size: 0.90rem;
+  
+}
+}
+
 
 .stater_plan__container .stater_plan__footer p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.90rem;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
     color: #6B7280;
     font-style: italic;
     border-top: 1px solid #F3F4F6;
     padding-top: 0.60rem;
     margin-top: 1rem;
+}
+
+@media only screen and (min-width:768px){
+.stater_plan__container .stater_plan__footer p{
+    font-size: 0.90rem;
+   
+}
 }
