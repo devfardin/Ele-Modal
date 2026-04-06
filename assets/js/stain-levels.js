@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const element = document.querySelector(".most_popular .elementor-element.elementor-icon-list--layout-traditional.elementor-list-item-link-full_width.elementor-widget.elementor-widget-icon-list .elementor-icon-list-items .elementor-icon-list-item:nth-child(7)");
+    const elements = document.querySelectorAll(".most_popular .elementor-element.elementor-icon-list--layout-traditional.elementor-list-item-link-full_width.elementor-widget.elementor-widget-icon-list .elementor-icon-list-items .elementor-icon-list-item:nth-child(7), .starter .elementor-element.elementor-icon-list--layout-traditional.elementor-list-item-link-full_width.elementor-widget.elementor-widget-icon-list .elementor-icon-list-items .elementor-icon-list-item:nth-child(7)");
 
-    const li = document.createElement('li');
-    li.classList.add('elementor-icon-list-item', 'ele-modal__custom');
-    li.innerHTML = '<span class="elementor-icon-list-text">How are stain levels assessed?</span><span> &#8594;</span>';
-    element.insertAdjacentElement('afterend', li);
+    elements.forEach(element => {
+        const li = document.createElement('li');
+        li.classList.add('elementor-icon-list-item', 'ele-modal__custom');
+        li.innerHTML = '<span class="elementor-icon-list-text">How are stain levels assessed?</span><span> &#8594;</span>';
 
-    li.addEventListener('click', function () {
-        createModal(`
+        element.insertAdjacentElement('afterend', li);
+
+        li.addEventListener('click', function () {
+            createModal(`
             <div class="stater_plan__container">
             
                 <div class="stater_plan__top">
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                     </ul>
                                 </div>
                             </div>`).join('')
-            }
+                }
                 </div>
 
                 <div class="stater_plan__footer">
@@ -44,5 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             </div>
         `);
+        });
     });
 });
