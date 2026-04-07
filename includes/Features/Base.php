@@ -31,7 +31,7 @@ class Base
         wp_enqueue_script('stain-levels-plan', ELE_MODAL_DIR_URL . 'assets/js/stain-levels.js', array('jquery'), ELE_MODAL_VERSION, true);
 
         // Most Popular paln script
-        // wp_enqueue_script('most-popular', ELE_MODAL_DIR_URL . 'assets/js/most-popular.js', array('jquery'), ELE_MODAL_VERSION, true);
+        wp_enqueue_script('furniture-item-plan', ELE_MODAL_DIR_URL . 'assets/js/furniture-item.js', array('jquery'), ELE_MODAL_VERSION, true);
         
 
         // All Data here

@@ -18,10 +18,10 @@
     margin: 0;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .stater_plan__container .stater_plan__top h2 {
-    font-size: 25px;
-}
+        font-size: 25px;
+    }
 }
 
 .stater_plan__container .stater_plan__top p {
@@ -31,10 +31,11 @@
     color: #737373;
     margin: 0;
 }
-@media only screen and (min-width:768px){
+
+@media only screen and (min-width:768px) {
     .stater_plan__container .stater_plan__top p {
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
 }
 
 .stater_plan__container .stater_plan__body {
@@ -59,8 +60,9 @@
 }
 
 .stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(even) {
-     background-color: rgb(255 251 235);
-    border: 1px solid rgb(253 230 138);;
+    background-color: rgb(255 251 235);
+    border: 1px solid rgb(253 230 138);
+    ;
 }
 
 .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title {
@@ -76,13 +78,14 @@
     padding: 0.10rem 0.600rem;
     border-radius: 9999px;
 }
-.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(odd) .stater_plan__body_title .level{
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(odd) .stater_plan__body_title .level {
     --tw-bg-opacity: 1;
     background-color: rgb(209 250 229 / var(--tw-bg-opacity, 1));
     color: #047857;
 }
 
-.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(even) .stater_plan__body_title .level{
+.stater_plan__container .stater_plan__body .stater_plan__stain-level:nth-child(even) .stater_plan__body_title .level {
     --tw-bg-opacity: 1;
     background-color: rgb(254 243 199 / var(--tw-bg-opacity, 1));
     border: 1px solid #fde68a;
@@ -90,23 +93,25 @@
 }
 
 .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_title .level_subtitle {
-     font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.900rem;
     font-weight: 600;
     color: var(--e-global-color-primary);
 }
 
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items{
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items {
     margin-top: 12px;
 }
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul{
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin: 0;
 }
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li{
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.820rem;
     color: #404040;
@@ -114,12 +119,14 @@
     align-items: center;
     gap: 8px;
 }
-@media only screen and (min-width:768px){
-    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li{
-    font-size: 0.890rem;
+
+@media only screen and (min-width:768px) {
+    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items ul li {
+        font-size: 0.890rem;
+    }
 }
-}
-.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p{
+
+.stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.830rem;
     color: #6B7280;
@@ -127,31 +134,75 @@
     margin-top: 10px;
     padding: 0;
 }
-@media only screen and (min-width:768px){
-    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p{
-    font-size: 0.90rem;
-  
-}
+
+@media only screen and (min-width:768px) {
+    .stater_plan__container .stater_plan__body .stater_plan__stain-level .stater_plan__body_items p {
+        font-size: 0.90rem;
+
+    }
 }
 
 
-.stater_plan__container .stater_plan__footer p{
+.stater_plan__container .stater_plan__footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     line-height: 1.1rem;
     color: #6B7280;
     font-style: italic;
     border-top: 1px solid #F3F4F6;
-    padding-top: 0.60rem;
+    padding-top: 10px;
     margin-top: 1rem;
 }
 
-@media only screen and (min-width:768px){
-.stater_plan__container .stater_plan__footer p{
-    font-size: 0.90rem;
-   
-}
-}
-/* most_popular */
+@media only screen and (min-width:768px) {
+    .stater_plan__container .stater_plan__footer p {
+        font-size: 0.90rem;
 
-/* best_value */
+    }
+}
+
+/* Furniture modal style */
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_title span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2a44;
+    text-align: left;
+    padding-bottom: 0.75rem;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F3F4F6;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_items:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_items .stater_plan__furniture_items_type {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #374151;
+}
+
+.stater_plan__container .stater_plan__body .stater_plan__body_furniture_items .stater_plan__furniture_items_counts {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2a44;
+    text-align: right;
+}

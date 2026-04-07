@@ -41,3 +41,20 @@ const stainData = {
 
     footer: "Stain level assessed during visit. Additional costs may apply."
 };
+
+
+const furnitureItems = {
+    title: "What counts as a furniture item?",
+    desc: '',
+    items: [
+        { type: "Sofa", countsAs: "1 item" },
+        { type: "Loveseat", countsAs: "1 item" },
+        { type: "Recliner", countsAs: "1 item" },
+        { type: "Accent Chair", countsAs: "1 item" },
+        { type: "Ottoman", countsAs: "1 item" },
+        { type: "Sectional up to 6 seats", countsAs: "1 item" },
+        { type: "Sectional 7+ seats", countsAs: "2 items" },
+        { type: "Dining Chairs (up to 8)", countsAs: "1 item" }
+    ],
+    footer: "Not sure? Your initial assessment will confirm coverage."
+};
