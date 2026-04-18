@@ -3,7 +3,7 @@
  * Plugin Name: Ele Modal
  * Description: Ele Modal for Elementor 
  * Plugin URI: https://simple-contact-form-management.com
- * Version: 1.0.0
+ * Version: 2.1.0
  * Author: Fardin Ahmed
  * Author URI: https://github.com/devfardin
  * Text Domain: ele-modal

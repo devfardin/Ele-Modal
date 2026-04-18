@@ -23,7 +23,7 @@ class EleModal
     {
         define('ELE_MODAL_VERSION', '1.0.0');
         define('ELE_ADDONS_PATH', plugin_dir_path(__DIR__));
-        define('ELE_MODAL_DIR_URL', plugin_dir_url(__DIR__));
+        define('ELE_MODAL_DIR_URL', plugin_dir_url(dirname(__FILE__) . '/../ele-modal.php'));
         define('ELE_ADDONS_TEXT_DOMAIN', load_plugin_textdomain('ele-addons', false, dirname(plugin_basename(__FILE__)) . '/languages'));
     }
 
@@ -36,6 +36,7 @@ class EleModal
     {
         // App\Widgets\Base::instance()->init();
         Features\Base::instance()->init();
+        Widgets\Base::instance()->init();
     }
 
     public function init_hooks()

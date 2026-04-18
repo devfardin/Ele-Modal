@@ -1,0 +1,167 @@
+/* ── Trigger button ── */
+.ele-menu-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--e-global-color-primary, #1F3A5F);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-family: var(--e-global-typography-primary-font-family, 'Roboto'), sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.25s ease;
+    user-select: none;
+}
+.ele-menu-trigger:hover {
+    background: var(--e-global-color-secondary, #2F6FED);
+}
+
+/* ── Hamburger bars ── */
+.ele-menu-trigger .ele-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    flex-shrink: 0;
+}
+.ele-menu-trigger .ele-bars span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+.ele-menu-trigger.is-active .ele-bars span:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+}
+.ele-menu-trigger.is-active .ele-bars span:nth-child(2) {
+    opacity: 0;
+}
+.ele-menu-trigger.is-active .ele-bars span:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* ── Overlay backdrop ── */
+.ele-nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(31, 58, 95, 0.45);
+    z-index: 9998;
+    animation: ele-fade-in 0.25s ease;
+}
+.ele-nav-overlay.is-open {
+    display: block;
+}
+
+/* ── Slide-in drawer ── */
+.ele-nav-drawer {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 24px rgba(31, 58, 95, 0.18);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+.ele-nav-drawer.is-open {
+    left: 0;
+}
+
+/* ── Drawer header ── */
+.ele-nav-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background: var(--e-global-color-primary, #1F3A5F);
+    flex-shrink: 0;
+}
+.ele-nav-drawer-header span {
+    color: #fff;
+    font-family: var(--e-global-typography-primary-font-family, 'Roboto'), sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* ── Close button ── */
+.ele-nav-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    transition: background 0.2s ease;
+    flex-shrink: 0;
+}
+.ele-nav-close:hover {
+    background: var(--e-global-color-secondary, #2F6FED);
+}
+
+/* ── Nav items ── */
+.ele-nav-drawer-body {
+    overflow-y: auto;
+    flex: 1;
+    padding: 8px 0;
+}
+.ele-nav-drawer-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ele-nav-drawer-body ul li {
+    border-bottom: 1px solid #E5EAF1;
+}
+.ele-nav-drawer-body ul li a {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-family: var(--e-global-typography-text-font-family, 'Roboto'), sans-serif;
+    color: var(--e-global-color-primary, #1F3A5F);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+.ele-nav-drawer-body ul li a:hover {
+    background: #F7F9FC;
+    color: var(--e-global-color-secondary, #2F6FED);
+    padding-left: 28px;
+}
+.ele-nav-drawer-body ul li.current-menu-item > a {
+    color: var(--e-global-color-secondary, #2F6FED);
+    font-weight: 600;
+    border-left: 3px solid var(--e-global-color-secondary, #2F6FED);
+}
+
+/* ── Sub-menus ── */
+.ele-nav-drawer-body ul ul {
+    background: #F7F9FC;
+}
+.ele-nav-drawer-body ul ul li a {
+    padding-left: 36px;
+    font-size: 14px;
+}
+
+@keyframes ele-fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
