@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 20px;
-    height: 15px;
+    height: 20px;
     flex-shrink: 0;
 }
 .ele-menu-trigger .ele-bars span {
@@ -52,7 +52,7 @@
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(31, 58, 95, 0.45);
+    /* background: rgba(31, 58, 95, 0.45); */
     z-index: 9998;
     animation: ele-fade-in 0.25s ease;
 }
@@ -131,6 +131,10 @@
 .ele-nav-drawer-body ul li {
     border-bottom: 1px solid #E5EAF1;
 }
+.ele-nav-drawer-body ul li:last-child {
+    border-bottom: none;
+}
+
 .ele-nav-drawer-body ul li a {
     display: flex;
     align-items: center;
@@ -140,6 +144,22 @@
     color: var(--e-global-color-primary, #1F3A5F);
     text-decoration: none;
     transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+.ele-nav-drawer-body ul li.btn a{
+    background-color: var(--e-global-color-primary);
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--e-global-color-kadence9);
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px 24px 10px 24px;
+    display: inline-block;
+    margin: 14px 10px;
+}
+.ele-nav-drawer-body ul li.btn a:hover{
+    /* background: #ebf0f7; */
+    background: var(--e-global-color-secondary);
+    color: #F7F9FC;
 }
 .ele-nav-drawer-body ul li a:hover {
     background: #F7F9FC;
