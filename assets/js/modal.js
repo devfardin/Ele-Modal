@@ -1,4 +1,4 @@
-    function createModal(content) {
+    window.createModal = function createModal(content) {
         const overlay = document.createElement('div');
         overlay.classList.add('ele-modal-overlay');
         overlay.innerHTML = `

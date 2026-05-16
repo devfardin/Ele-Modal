@@ -21,6 +21,8 @@ class Base
     public function enqueue_scripts()
     {
         wp_enqueue_style('modal-css', ELE_MODAL_DIR_URL . 'assets/css/modal.css', array(), ELE_MODAL_VERSION, 'all');
+        
+        wp_enqueue_style('main-style', ELE_MODAL_DIR_URL . 'assets/css/main.css', array(), ELE_MODAL_VERSION, 'all');
 
         wp_enqueue_style('modal-general-style', ELE_MODAL_DIR_URL . 'assets/css/modal-general.css', array(), ELE_MODAL_VERSION, 'all');
 
@@ -36,6 +38,9 @@ class Base
 
         // All Data here
         wp_enqueue_script('modal-data', ELE_MODAL_DIR_URL . 'assets/js/modal-data.js', array('jquery'), ELE_MODAL_VERSION, true);
+        
+        wp_enqueue_script('booking-form', ELE_MODAL_DIR_URL . 'assets/js/booking-form.js', array('jquery'), ELE_MODAL_VERSION, true);
+        wp_enqueue_script('login-form', ELE_MODAL_DIR_URL . 'assets/js/login-form.js', array('jquery'), ELE_MODAL_VERSION, true);
     }
 
 
